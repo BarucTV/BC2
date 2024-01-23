@@ -496,14 +496,14 @@ a {
 }
 
 .menu-cima .i1 h1 {
-  z-index: 88;
+  z-index: 1;
 }
 
 .menu-mods img {
   margin: 0px 20px;
   width: 100px;
   height: 100px;
-  z-index: 88;
+  z-index: 1;
   border-radius: 2px;
 }
 
@@ -666,6 +666,16 @@ footer {
 }
 
 @media (max-width: 750px) {
+
+  .menu-cima .i1 h1 {
+    font-size: 18px;
+  }
+  
+  .menu-mods img {
+    margin: 0 5px;
+    width: 65px;
+    height: 65px;
+  }
 
   .card{
     margin: 0 0;
