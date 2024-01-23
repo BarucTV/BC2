@@ -431,6 +431,7 @@ a {
   background-position: center;
   display: flex;
   align-items: center;
+  justify-content: right;
   cursor: pointer;
   transition: .1s ease-in-out;
 }
@@ -476,6 +477,7 @@ a {
   background-position: center;
   display: flex;
   align-items: center;
+  justify-content: right;
   cursor: pointer;
   transition: .1s ease-in-out;
 }
