@@ -13,6 +13,13 @@
 
 <body>
 
+  <div class="alert">
+    <div class="alert-div">
+      <h1>Em Breve...</h1>
+      <i class="fa-regular fa-clock" style="color: white; font-size: 50px; margin: 0 20px 0 20px;"></i>
+    </div>
+  </div>
+
   <div class="imagem1 imagem">
     <div>
       <img src="images/sd.png" alt="">
@@ -138,7 +145,7 @@
         <img src="images/R.png" alt="">
         <h1>TechCraft</h1>
       </a>
-      <a style="background-image: url('images/minecraft-vanilla-desktop.png');" class="i2">
+      <a style="background-image: url('images/minecraft-vanilla-desktop.png');" class="eb i2">
         <div class="menu-overlay" id="m2"></div>
         <h1>Em Breve</h1>
         <i class="fa-regular fa-clock" style="color: white; font-size: 70px; margin: 0 20px 0 20px;"></i>
@@ -146,12 +153,12 @@
     </div>
 
     <div class="menu-baixo">
-      <a style="background-image: url('images/woofu_waifu2x_art_noise2_scale.png');" class="i3">
+      <a style="background-image: url('images/woofu_waifu2x_art_noise2_scale.png');" class="eb i3">
         <div class="menu-overlay" id="m3"></div>
         <i class="fa-regular fa-clock" style="color: white; font-size: 70px; margin: 0 20px 0 20px;"></i>
         <h1>Em Breve</h1>
       </a>
-      <a style="background-image: url('images/sd.png');" class="i4">
+      <a style="background-image: url('images/sd.png');" class="eb i4">
         <div class="menu-overlay" id="m4"></div>
         <h1>Em Breve</h1>
         <i class="fa-regular fa-clock" style="color: white; font-size: 70px; margin: 0 20px 0 20px;"></i>
@@ -188,10 +195,10 @@
           <a href="#" class="footer-link">TechCraft</a>
         </li>
         <li>
-          <a href="#" class="footer-link">Zombies</a>
+          <a href="#" class="footer-link eb">Zombies</a>
         </li>
         <li>
-          <a href="#" class="footer-link">Age of War</a>
+          <a href="#" class="footer-link eb">Age of War</a>
         </li>
       </ul>
 
@@ -237,6 +244,20 @@
   $('body').on('click', '.abrir-e-fechar', function () {
     $('.nav').toggleClass('active')
     $('.header').toggleClass('navAct')
+  })
+
+  $('body').on('click', '.eb', function () {
+    $('.alert div').toggleClass('alert-act')
+    $('.alert div').toggleClass('alert-div')
+    $('body').on('click', '.alert', function () {
+      $('.alert div').toggleClass('alert-act')
+      $('.alert div').toggleClass('alert-div')
+    })
+    setTimeout(
+      function () {
+        $('.alert div').toggleClass('alert-act')
+        $('.alert div').toggleClass('alert-div')
+      }, 2000)
   })
 
   $('body').on('click', '.img1', function () {
