@@ -47,7 +47,6 @@ a {
   height: 0px;
   background-color: transparent;
   transition: .5s ease-in-out;
-
 }
 
 .header {
@@ -210,8 +209,8 @@ a {
 
 .imagem h1 {
   color: white;
-  right: 320px;
-  top: 170px;
+  right: calc(115% - (100% - 30px));
+  top: calc(115% - (100% - 20px));
   position: absolute;
   cursor: pointer;
   transition: .3s ease-in-out;
@@ -715,13 +714,6 @@ footer {
   #footer_content {
     grid-template-columns: repeat(1, 1fr);
     padding: 3rem 2rem;
-  }
-}
-
-@media screen and (max-width: 1400px) {
-  .imagem h1 {
-    right: 220px;
-    top: 110px;
   }
 }
 
