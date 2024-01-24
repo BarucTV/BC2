@@ -41,11 +41,11 @@
   <header class="header navAct">
     <nav class="nav">
       <a href="index.html" class="logo">BC</a>
-      <button class="hamburger"></button>
+      <button class="hamburger abrir-e-fechar"></button>
       <ul class="nav-list">
-        <li><a href="#" id="inicio">Inicio</a></li>
-        <li><a href="#" id="sobre">Sobre</a></li>
-        <li><a href="#" id="mod">Modpacks</a></li>
+        <li><a href="#" class="abrir-e-fechar" id="inicio">Inicio</a></li>
+        <li><a href="#" class="abrir-e-fechar" id="sobre">Sobre</a></li>
+        <li><a href="#" class="abrir-e-fechar" id="mod">Modpacks</a></li>
         <li><a href="#">Discord</a></li>
       </ul>
     </nav>
@@ -239,37 +239,8 @@
 <script src="jquery.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
 <script>
-    $('body').on('click', '#inicio', function () {
-    if ($('.nav').hasClass('active')) {
-      $('.nav').removeClass('active')
-      $('.header').removeClass('navAct')
-    } else {
-      $('.nav').addClass('active')
-      $('.header').addClass('navAct')
-    }
-  })
 
-    $('body').on('click', '#sobre', function () {
-    if ($('.nav').hasClass('active')) {
-      $('.nav').removeClass('active')
-      $('.header').removeClass('navAct')
-    } else {
-      $('.nav').addClass('active')
-      $('.header').addClass('navAct')
-    }
-  })
-
-  $('body').on('click', '#mod', function () {
-    if ($('.nav').hasClass('active')) {
-      $('.nav').removeClass('active')
-      $('.header').removeClass('navAct')
-    } else {
-      $('.nav').addClass('active')
-      $('.header').addClass('navAct')
-    }
-  })
-
-  $('body').on('click', '.hamburger', function () {
+  $('body').on('click', '.abrir-e-fechar', function () {
     if ($('.nav').hasClass('active')) {
       $('.nav').removeClass('active')
       $('.header').removeClass('navAct')

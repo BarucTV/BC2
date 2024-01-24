@@ -246,13 +246,13 @@ a {
   text-align: center;
 }
 
-.cards-baixo-c{
+.cards-baixo-c {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
 }
 
-.card-criadores h1{
+.card-criadores h1 {
   color: #7f37c9;
   margin: 20px;
   font-size: 34px;
@@ -270,7 +270,7 @@ a {
   transition: .1s ease-in;
 }
 
-.card-c:hover{
+.card-c:hover {
   border-radius: 22px;
   border: 2px solid #171717;
   backdrop-filter: blur(10px);
@@ -278,7 +278,7 @@ a {
   transition: .1s ease-in;
 }
 
-.card-criadores img{
+.card-criadores img {
   width: 100px;
   height: 100px;
   border-radius: 20px;
@@ -775,6 +775,16 @@ footer {
     margin: 50px 0 120px 0;
   }
 
+  .cards-baixo-c {
+    flex-direction: column;
+    font-size: 20px;
+    size: 0.9;
+  }
+
+  .card-c{
+    margin-bottom: 20px;
+  }
+
   .esq-cima {
     font-size: 12px;
     width: 40%;
@@ -803,7 +813,7 @@ footer {
   .sobre-cards {
     flex-direction: column;
     padding-top: 100px;
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .esq-esq {
