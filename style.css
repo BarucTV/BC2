@@ -741,6 +741,11 @@ footer {
     height: 65px;
   }
 
+  .menu-overlay{
+    background-position: center;
+    background-size: fill;
+  }
+
   .card {
     margin: 0 0;
   }
