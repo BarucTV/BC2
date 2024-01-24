@@ -43,8 +43,8 @@
       <a href="index.html" class="logo">BC</a>
       <button class="hamburger"></button>
       <ul class="nav-list">
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#">Sobre</a></li>
+        <li><a href="#" id="inicio">Inicio</a></li>
+        <li><a href="#" id="sobre">Sobre</a></li>
         <li><a href="#" id="mod">Modpacks</a></li>
         <li><a href="#">Discord</a></li>
       </ul>
@@ -85,13 +85,16 @@
   </div>
 
   <div class="card-criadores">
-    <div class="card-c">
-      <img src="" alt="">
-      <h2>PijenP</h2>
-    </div>
-    <div class="card-c">
-      <img src="" alt="">
-      <h2>BarucTV</h2>
+    <h1>Criadores:</h1>
+    <div class="cards-baixo-c">
+      <a href="https://www.youtube.com/@PijenP" class="card-c">
+        <img src="images/channels4_profile.jpg" alt="">
+        <h1>PijenP&nbsp;<i class="fa-brands fa-youtube" style="font-size: 26px;"></i></h1>
+      </a>
+      <a href="" class="card-c">
+        <img src="images/unnamed.jpg" alt="">
+        <h1>BarucTV&nbsp;<i class="fa-brands fa-youtube" style="font-size: 26px;"></i></h1>
+      </a>
     </div>
   </div>
 
@@ -120,14 +123,7 @@
     </div>
 
     <div class="div">
-      <div class="center1">
-        <div class="card img1" style="background-image: url('images/sd.png');"></div>
-        <div class="card img2" style="background-image: url('images/minecraft-vanilla-desktop.png');"></div>
-        <div class="card img3" style="background-image: url('images/OIP.png');"></div>
-        <div class="card img4" style="background-image: url('images/Minecraft-shaders-1245477.png');"></div>
-      </div>
       <div class="center">
-
         <div class="card img1" style="background-image: url('images/sd.png');"></div>
         <div class="card img2" style="background-image: url('images/minecraft-vanilla-desktop.png');"></div>
         <div class="card img3" style="background-image: url('images/OIP.png');"></div>
@@ -139,7 +135,7 @@
   <div class="menu-mods">
 
     <div class="menu-cima">
-      <a href="techcraft.html" style="background-image: url('images/Minecraft-shaders-1245477.png');" class="i1"
+      <a href="techcraft.html" style="background-image: url('images/imagem\ meramente\ ilustrativa\,\ o\ onibus\ espacial\ do\ jogo\ é\ escroto\ pra\ caralho.png');" class="i1"
         id="tc">
         <div class="menu-overlay" id="m1"></div>
         <img src="images/R.png" alt="">
@@ -153,7 +149,7 @@
     </div>
 
     <div class="menu-baixo">
-      <div style="background-image: url('images/OIP.png');" class="i3">
+      <div style="background-image: url('images/woofu_waifu2x_art_noise2_scale.png');" class="i3">
         <div class="menu-overlay" id="m3"></div>
         <i class="fa-regular fa-clock" style="color: white; font-size: 70px; margin: 0 20px 0 20px;"></i>
         <h1>Em Breve</h1>
@@ -243,6 +239,26 @@
 <script src="jquery.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
 <script>
+    $('body').on('click', '#inicio', function () {
+    if ($('.nav').hasClass('active')) {
+      $('.nav').removeClass('active')
+      $('.header').removeClass('navAct')
+    } else {
+      $('.nav').addClass('active')
+      $('.header').addClass('navAct')
+    }
+  })
+
+    $('body').on('click', '#sobre', function () {
+    if ($('.nav').hasClass('active')) {
+      $('.nav').removeClass('active')
+      $('.header').removeClass('navAct')
+    } else {
+      $('.nav').addClass('active')
+      $('.header').addClass('navAct')
+    }
+  })
+
   $('body').on('click', '#mod', function () {
     if ($('.nav').hasClass('active')) {
       $('.nav').removeClass('active')
@@ -299,6 +315,22 @@
     })
   })
 
+  $('body').on('click', '#inicio', function () {
+    let session = $('.hero').offset();
+    let topsession = session.top
+    $('html').animate({
+      scrollTop: topsession
+    })
+  })
+
+  $('body').on('click', '#sobre', function () {
+    let session = $('.sobre').offset();
+    let topsession = session.top
+    $('html').animate({
+      scrollTop: topsession
+    })
+  })
+
   let carrosel = $('.center')
 
   carrosel.slick({
@@ -309,7 +341,5 @@
     autoplaySpeed: 2000,
     arrows: false
   })
-
 </script>
-
 </html>
