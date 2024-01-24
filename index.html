@@ -15,24 +15,20 @@
 
   <div class="imagem1 imagem">
     <div>
-      <h1>X</h1>
       <img src="images/sd.png" alt="">
     </div>
   </div>
   <div class="imagem2 imagem">
-    <h1>X</h1>
     <div>
       <img src="images/minecraft-vanilla-desktop.png" alt="">
     </div>
   </div>
   <div class="imagem3 imagem">
-    <h1>X</h1>
     <div>
       <img src="images/OIP.png" alt="">
     </div>
   </div>
   <div class="imagem4 imagem">
-    <h1>X</h1>
     <div>
       <img src="images/Minecraft-shaders-1245477.png" alt="">
     </div>
@@ -135,8 +131,9 @@
   <div class="menu-mods">
 
     <div class="menu-cima">
-      <a href="techcraft.html" style="background-image: url('images/imagem\ meramente\ ilustrativa\,\ o\ onibus\ espacial\ do\ jogo\ é\ escroto\ pra\ caralho.png');" class="i1"
-        id="tc">
+      <a href="techcraft.html"
+        style="background-image: url('images/imagem\ meramente\ ilustrativa\,\ o\ onibus\ espacial\ do\ jogo\ é\ escroto\ pra\ caralho.png');"
+        class="i1" id="tc">
         <div class="menu-overlay" id="m1"></div>
         <img src="images/R.png" alt="">
         <h1>TechCraft</h1>
@@ -238,39 +235,34 @@
 <script>
 
   $('body').on('click', '.abrir-e-fechar', function () {
-    if ($('.nav').hasClass('active')) {
-      $('.nav').removeClass('active')
-      $('.header').removeClass('navAct')
-    } else {
-      $('.nav').addClass('active')
-      $('.header').addClass('navAct')
-    }
+    $('.nav').toggleClass('active')
+    $('.header').toggleClass('navAct')
   })
 
   $('body').on('click', '.img1', function () {
     $('.imagem1').fadeIn()
-    $('body').on('click', '.imagem1 h1', function () {
+    $('body').on('click', '.imagem1', function () {
       $('.imagem1').fadeOut()
     })
   })
 
   $('body').on('click', '.img2', function () {
     $('.imagem2').fadeIn()
-    $('body').on('click', '.imagem2 h1', function () {
+    $('body').on('click', '.imagem2', function () {
       $('.imagem2').fadeOut()
     })
   })
 
   $('body').on('click', '.img3', function () {
     $('.imagem3').fadeIn()
-    $('body').on('click', '.imagem3 h1', function () {
+    $('body').on('click', '.imagem3', function () {
       $('.imagem3').fadeOut()
     })
   })
 
   $('body').on('click', '.img4', function () {
     $('.imagem4').fadeIn()
-    $('body').on('click', '.imagem4 h1', function () {
+    $('body').on('click', '.imagem4', function () {
       $('.imagem4').fadeOut()
     })
   })
@@ -307,7 +299,12 @@
     slidesToShow: 3,
     autoplay: true,
     autoplaySpeed: 2000,
-    arrows: false
+    arrows: false,
+    infinite: true,
+    slidesToScroll: 1,
   })
+
+
 </script>
+
 </html>
