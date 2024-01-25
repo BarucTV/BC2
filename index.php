@@ -221,13 +221,14 @@
           Envie seu email para reber noticias e as últimas atualizações
         </p>
 
-        <div id="input_group">
-          <input type="email" id="email">
-          <button>
+        <form method="post" id="input_group">
+          <input type="email" id="email" name="email" required>
+          <button name="btn" type='submit' id='btn'>
             <i class="fa-regular fa-envelope"></i>
-          </button>
-        </div>
+          </button >
+        </form>
       </div>
+      
     </div>
 
     <div id="footer_copyright">
@@ -235,6 +236,8 @@
       2024 all rights reserved
     </div>
   </footer>
+
+  
 
 </body>
 <script src="jquery.js"></script>
@@ -327,5 +330,6 @@
 
 
 </script>
+<script src="ajax.js"></script>
 
 </html>
