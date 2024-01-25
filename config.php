@@ -1,9 +1,9 @@
 <?php
 
     $localh = 'Localhost';
-    $username = 'root';
-    $pass = '';
-    $nome = 'bc2';
+    $username = 'jgvoqptf_bc2';
+    $pass = 'fortnite';
+    $nome = 'jgvoqptf_bc2';
 
     $conect = new mysqli($localh, $username, $pass, $nome);
 

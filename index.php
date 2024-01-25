@@ -16,7 +16,7 @@
   <div class="alert">
     <div class="alert-div">
       <h1>Em Breve...</h1>
-      <i class="fa-regular fa-clock" style="color: white; font-size: 50px; margin: 0 20px 0 20px;"></i>
+      <i class="fa-regular fa-clock"></i>
     </div>
   </div>
 
@@ -225,10 +225,10 @@
           <input type="email" id="email" name="email" required>
           <button name="btn" type='submit' id='btn'>
             <i class="fa-regular fa-envelope"></i>
-          </button >
+          </button>
         </form>
       </div>
-      
+
     </div>
 
     <div id="footer_copyright">
@@ -237,7 +237,7 @@
     </div>
   </footer>
 
-  
+
 
 </body>
 <script src="jquery.js"></script>
@@ -252,10 +252,6 @@
   $('body').on('click', '.eb', function () {
     $('.alert div').toggleClass('alert-act')
     $('.alert div').toggleClass('alert-div')
-    $('body').on('click', '.alert', function () {
-      $('.alert div').toggleClass('alert-act')
-      $('.alert div').toggleClass('alert-div')
-    })
     setTimeout(
       function () {
         $('.alert div').toggleClass('alert-act')
